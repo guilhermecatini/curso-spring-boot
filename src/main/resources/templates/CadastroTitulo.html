@@ -22,44 +22,46 @@
 
 	<div class="container">
 		<div class="row">
+			<div class="col-sm-offset-3 col-sm-6">
+
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<div class="panel-title">Cadastro de Título</div>
 					</div>
 					<div class="panel-body">
-						<form>
-						
+						<form method="POST" action="/titulos">
+
 							<div class="row">
-								<div class="col-sm-4 col-md-4 col-lg-4">
+								<div class="col-sm-12 col-md-12 col-lg-12">
 									<label>Descrição</label>
 									<input type="text" class="form-control" name="descricao" />
 								</div>
 							</div>
-							
+
 							<div class="row">
-								<div class="col-sm-4 col-md-4 col-lg-4">
+								<div class="col-sm-12 col-md-12 col-lg-12">
 									<label>Data de Vencimento</label>
-									<input type="date" class="form-control" name="data_vencimento" />
+									<input type="text" class="form-control" name="data_vencimento" />
 								</div>
 							</div>
-							
+
 							<div class="row">
-								<div class="col-sm-4 col-md-4 col-lg-4">
+								<div class="col-sm-12 col-md-12 col-lg-12">
 									<label>Valor</label>
-									<input type="number" class="form-control" name="data_vencimento" />
+									<input type="number" class="form-control" name="valor" />
 								</div>
 							</div>
-							
+
 							<div class="row">
-								<div class="col-sm-4 col-md-4 col-lg-4">
+								<div class="col-sm-12 col-md-12 col-lg-12">
 									<label>Status</label>
 									<select class="form-control" name="status">
-										<option>Pendente</option>
-										<option>Recebido</option>
+										<option value="PENDENTE">Pendente</option>
+										<option value="RECEBIDO">Recebido</option>
 									</select>
 								</div>
 							</div>
-							
+
 							<div class="row">
 								<div class="col-sm-12 col-md-12 col-lg-12">
 									<hr />
@@ -67,10 +69,12 @@
 									<button type="submit" class="btn btn-primary">Gravar</button>
 								</div>
 							</div>
-							
+
 						</form>
 					</div>
 				</div>
+
+			</div>
 		</div>
 	</div>
 
